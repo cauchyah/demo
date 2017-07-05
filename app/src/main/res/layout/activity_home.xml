@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lulu.lin.mac.ParentLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/abcd"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <!--<ImageView
+       android:layout_marginTop="20dp"
+        android:src="@drawable/abcd"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+-->
+   <!-- <Button
+        android:text="i will change"
+        android:onClick="onChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.lulu.lin.mac.ParentLayout>
