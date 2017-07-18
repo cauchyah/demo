@@ -69,7 +69,7 @@ public class MyApplication extends Application {
                     if (launchIntent != null) {
                         launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         application.startActivity(launchIntent);
-                        SophixManager.getInstance().killProcessSafely();
+                        //SophixManager.getInstance().killProcessSafely();
                     }
 
                 }

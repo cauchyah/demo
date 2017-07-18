@@ -3,9 +3,13 @@
     package="com.lulu.lin.mac">
 
     <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- 外部存储读权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -41,11 +45,14 @@
         <receiver android:name=".MyBroadcastReceiver" />
 
         <activity android:name=".HomeActivity">
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
         <activity android:name=".MPChartActivity" />
         <activity android:name=".ConstraintsActivity" />
@@ -54,6 +61,29 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".DragSwipeActivity" />
+        <activity android:name=".IntentActivity">
+            <intent-filter>
+                <action android:name="thisisaction" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BesierActivity" />
+        <activity
+            android:name=".view.BluetoothTestActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <receiver android:name=".view.BluetoothTestActivity$BlueReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.bluetooth.device.action.FOUND"/> -->
+        <!-- <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
     </application>
 
 </manifest>
