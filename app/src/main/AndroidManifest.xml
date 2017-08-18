@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lulu.lin.mac">
+          package="com.lulu.lin.mac">
 
     <!-- 网络权限 -->
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- 外部存储读权限 -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".MyApplication"
@@ -23,13 +23,13 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.taobao.android.hotfix.IDSECRET"
-            android:value="24524261-1" />
+            android:value="24524261-1"/>
         <meta-data
             android:name="com.taobao.android.hotfix.APPSECRET"
-            android:value="6cf7a6abe6597d701269ef7492e06a1f" />
+            android:value="6cf7a6abe6597d701269ef7492e06a1f"/>
         <meta-data
             android:name="com.taobao.android.hotfix.RSASECRET"
-            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCAOAgpO+KibECnfYezM5hh7ALAq/vQfF8O6UPDHA9HktgNiylQV2yiEM1aZ47ArqSwOnp1J/ak1rBirbXrsBKknRPLFPYC5pL6yOg7n81FRnAUXqQNQRKQ/k58BSOMxb64SxLRenOySKIwsQClC+Cb+uNSORKQV5qi+9EU/hpINb6ZkBgjeaLyhgnuBp0ljm+Uy207PtJzQtVGfi5TFn/rSUvqVC7URL41zIODlu5yiBDzTHx5bvMkl1d8wyTX7CnXqEfKomJAw6pmm+mTo4rLOY3E8QRZmTUo93d2lGTEXhRHRWLaR2LKgiMgseQzhhw7RdDFG9D5SGEV4ITP2AY3AgMBAAECggEAHaRWhqnYkDI0lEQaDhy8es7kKATal21ZUIou5zlicuqI1kC40WEUtTbrMp5ES1lUq4UpcFJH2/3iEz4Tk6RF+xZxT/7NjQgfLKkrvzUHcJ+DI8JpbMMBdtHD9Tn+6PmCSPraI+GKQ8o07MrO2lkvmP/cc9LL7uDB2DIdORwxmUW3fgM5lHeCLvpUfUS0GyN7UIDNmQWN12ima88/kcvGxadzUOvQws7/OE1EVtZg7nUx1lZP8d7Rj1rizpK/+n40+0qa/if2OUlO0pS2Ilkkj4VnusZmoza6HdfSFPfKZdem0+ilexsvgXYWmNcWmRMOkCDwVFxgJAbOZSdXIMyK0QKBgQDEBo50hNd7klGXlHGuOE6vcr5x8lZ97VdD86qjdFWBJKA52ELihkONnPQM+LxIiZckH5Lgn9h8TJTTPbn7GJlRxPbFsZ9WSMd8hhqoC/YLDPp4NnpAWuQNOCd7xEu3vwm3qRRJMjJIvpoD9FS5ggLMOke+uG/x7P636MpbFL1GnwKBgQCncpqCY6myElHjt0DMhyq5OPo1MTudnksr3mXK9UVrxL9S6dFVP9UfgnMJ+uq8zrt+PzOdO32RfJvVV49p95YIoBdFfmRhqfbwflxO1+6JE2OK82szjXo/vQIzecAG7wZ1DsypD93oPcrSdsx1BMj7tCe/IgibrLAUrDzeSQqRaQKBgCIJDWT3x75B6n7KHG7mger+nkiEjjXxJqy6uw8EXPA+Xr+MaBiSvVnyPYGfEnn5wc9Y2BS+TEVQuqpu1kLdw4kqDLrIm2TM4C4jzq8M3JyQlVCYDOPtpBkTfe+EZq0xs0s7RTVsTMTKq00yeB95jmjNWbWoqm8z+goOlkv4LuD7AoGBAKYEUT6vs2LTGQ/N89gUt343CJPOgU3v0JXpBUGp1i9YPVzmZ96+z/5Spt4hQbT6vxgXb4QXpJKnWhW2n4EvsThSCWCkRMAz9JpSnhCptF2BtLLiTsopHiitq83/iy0UtXE/wBhqm9gT09DBaksm+GHeJ34wLxqxp06Hyj2Va33pAoGAaFiqjafamItZpY0Z8wnbLmac1CBDlgYUjLrAZLjNEFPeAVaFsdIlR81TK3AX7iWasIIlE7BRFM8gMGPU5C1z3N8T2AmWr/2/7+wVQuFCeEFcmNPQs3L6FNRmNFACQIXV8SG06kp+qsgZwzNsgAtROGkennjokVFXBSqmzk7oiaY=" />
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCAOAgpO+KibECnfYezM5hh7ALAq/vQfF8O6UPDHA9HktgNiylQV2yiEM1aZ47ArqSwOnp1J/ak1rBirbXrsBKknRPLFPYC5pL6yOg7n81FRnAUXqQNQRKQ/k58BSOMxb64SxLRenOySKIwsQClC+Cb+uNSORKQV5qi+9EU/hpINb6ZkBgjeaLyhgnuBp0ljm+Uy207PtJzQtVGfi5TFn/rSUvqVC7URL41zIODlu5yiBDzTHx5bvMkl1d8wyTX7CnXqEfKomJAw6pmm+mTo4rLOY3E8QRZmTUo93d2lGTEXhRHRWLaR2LKgiMgseQzhhw7RdDFG9D5SGEV4ITP2AY3AgMBAAECggEAHaRWhqnYkDI0lEQaDhy8es7kKATal21ZUIou5zlicuqI1kC40WEUtTbrMp5ES1lUq4UpcFJH2/3iEz4Tk6RF+xZxT/7NjQgfLKkrvzUHcJ+DI8JpbMMBdtHD9Tn+6PmCSPraI+GKQ8o07MrO2lkvmP/cc9LL7uDB2DIdORwxmUW3fgM5lHeCLvpUfUS0GyN7UIDNmQWN12ima88/kcvGxadzUOvQws7/OE1EVtZg7nUx1lZP8d7Rj1rizpK/+n40+0qa/if2OUlO0pS2Ilkkj4VnusZmoza6HdfSFPfKZdem0+ilexsvgXYWmNcWmRMOkCDwVFxgJAbOZSdXIMyK0QKBgQDEBo50hNd7klGXlHGuOE6vcr5x8lZ97VdD86qjdFWBJKA52ELihkONnPQM+LxIiZckH5Lgn9h8TJTTPbn7GJlRxPbFsZ9WSMd8hhqoC/YLDPp4NnpAWuQNOCd7xEu3vwm3qRRJMjJIvpoD9FS5ggLMOke+uG/x7P636MpbFL1GnwKBgQCncpqCY6myElHjt0DMhyq5OPo1MTudnksr3mXK9UVrxL9S6dFVP9UfgnMJ+uq8zrt+PzOdO32RfJvVV49p95YIoBdFfmRhqfbwflxO1+6JE2OK82szjXo/vQIzecAG7wZ1DsypD93oPcrSdsx1BMj7tCe/IgibrLAUrDzeSQqRaQKBgCIJDWT3x75B6n7KHG7mger+nkiEjjXxJqy6uw8EXPA+Xr+MaBiSvVnyPYGfEnn5wc9Y2BS+TEVQuqpu1kLdw4kqDLrIm2TM4C4jzq8M3JyQlVCYDOPtpBkTfe+EZq0xs0s7RTVsTMTKq00yeB95jmjNWbWoqm8z+goOlkv4LuD7AoGBAKYEUT6vs2LTGQ/N89gUt343CJPOgU3v0JXpBUGp1i9YPVzmZ96+z/5Spt4hQbT6vxgXb4QXpJKnWhW2n4EvsThSCWCkRMAz9JpSnhCptF2BtLLiTsopHiitq83/iy0UtXE/wBhqm9gT09DBaksm+GHeJ34wLxqxp06Hyj2Va33pAoGAaFiqjafamItZpY0Z8wnbLmac1CBDlgYUjLrAZLjNEFPeAVaFsdIlR81TK3AX7iWasIIlE7BRFM8gMGPU5C1z3N8T2AmWr/2/7+wVQuFCeEFcmNPQs3L6FNRmNFACQIXV8SG06kp+qsgZwzNsgAtROGkennjokVFXBSqmzk7oiaY="/>
 
         <activity android:name=".MainActivity">
 
@@ -42,48 +42,68 @@
             -->
         </activity>
 
-        <receiver android:name=".MyBroadcastReceiver" />
+        <receiver android:name=".MyBroadcastReceiver"/>
 
         <activity android:name=".HomeActivity">
 
-            <!--
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-            -->
         </activity>
-        <activity android:name=".MPChartActivity" />
-        <activity android:name=".ConstraintsActivity" />
+        <activity android:name=".MPChartActivity"/>
+        <activity android:name=".ConstraintsActivity"/>
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DragSwipeActivity" />
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".DragSwipeActivity"/>
         <activity android:name=".IntentActivity">
-            <intent-filter>
-                <action android:name="thisisaction" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+            <!--
+            <intent-filter>
+                <action android:name="thisisaction"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
+            -->
         </activity>
-        <activity android:name=".BesierActivity" />
+        <activity
+            android:name=".BesierActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity
             android:name=".view.BluetoothTestActivity"
-            android:launchMode="singleTask">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:launchMode="singleTask"/>
         <!-- <receiver android:name=".view.BluetoothTestActivity$BlueReceiver"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.bluetooth.device.action.FOUND"/> -->
         <!-- <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/> -->
         <!-- </intent-filter> -->
         <!-- </receiver> -->
+        <activity android:name=".PagerActivity"/>
+        <!--
+        <activity android:name=".CalculatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name=".VLayoutTestActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".FButtonActivity">
+
+        </activity>
     </application>
 
 </manifest>

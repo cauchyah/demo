@@ -33,6 +33,9 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.UUID;
 
+    /*  重启app，以及蓝牙连接都在这里
+      时间关系，蓝牙连接只完成了客户端*/
+
 public class BluetoothTestActivity extends AppCompatActivity {
     private static final int REQUEST_ENABLE = 11;
     private BroadcastReceiver mHomeKeyEventReceiver;
@@ -42,7 +45,7 @@ public class BluetoothTestActivity extends AppCompatActivity {
     private ArrayList<BluetoothDevice> mData = new ArrayList<>();
     private MyAdapter mAdapter;
     private BluetoothAdapter mBluetoothAdapter;
-    private BroadcastReceiver mReceiver;
+    private BroadcastReceiver mBluetoothReceiver;//蓝牙状态接收器
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +56,8 @@ public class BluetoothTestActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         mAdapter = new BluetoothTestActivity.MyAdapter();
         recyclerView.setAdapter(mAdapter);
-
-//        监听是否点击了home键将客户端推到后台
         mAlarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        // 监听是否点击了home键将客户端推到后台
         mHomeKeyEventReceiver = new BroadcastReceiver() {
             String SYSTEM_REASON = "reason";
             String SYSTEM_HOME_KEY = "homekey";
@@ -77,7 +79,7 @@ public class BluetoothTestActivity extends AppCompatActivity {
                 }
             }
         };
-        mReceiver = new BroadcastReceiver() {
+        mBluetoothReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
                 String action = intent.getAction();
@@ -105,8 +107,8 @@ public class BluetoothTestActivity extends AppCompatActivity {
             mAlarmManager.cancel(pi);
 
         }
-        if (mReceiver != null)
-            registerReceiver(mReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
+        if (mBluetoothReceiver != null)
+            registerReceiver(mBluetoothReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
 
     }
 
@@ -161,8 +163,7 @@ public class BluetoothTestActivity extends AppCompatActivity {
         }
 
         public void run() {
-            //在连接的时候取消扫描
-            mBluetoothAdapter.cancelDiscovery();
+
 
             try {
 
@@ -174,7 +175,7 @@ public class BluetoothTestActivity extends AppCompatActivity {
                 }
                 return;
             }
-
+            ///到此可以获取inputstream流信息了
 
         }
 
@@ -201,7 +202,8 @@ public class BluetoothTestActivity extends AppCompatActivity {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    //在连接的时候取消扫描
+                    mBluetoothAdapter.cancelDiscovery();
                     new ConnectThread(mData.get(position)).start();
                 }
             });
@@ -254,7 +256,7 @@ public class BluetoothTestActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(mReceiver);
+        unregisterReceiver(mBluetoothReceiver);
 
     }
 }

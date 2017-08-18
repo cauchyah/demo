@@ -18,6 +18,7 @@ import android.widget.RemoteViews;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.lulu.lin.mac.view.BluetoothTestActivity;
 import com.taobao.sophix.SophixManager;
 
 import java.util.ArrayList;
@@ -48,6 +49,10 @@ public class HomeActivity extends AppCompatActivity {
         mData.add(new ActivityBean("scrollingActivity", ScrollingActivity.class));
         mData.add(new ActivityBean("drag&swipe", DragSwipeActivity.class));
         mData.add(new ActivityBean("贝塞尔曲线", BesierActivity.class));
+        mData.add(new ActivityBean("蓝牙", BluetoothTestActivity.class));
+        mData.add(new ActivityBean("VIEWPAGER",PagerActivity.class));
+        mData.add(new ActivityBean("VLayout",VLayoutTestActivity.class));
+        mData.add(new ActivityBean("FBUtton",FButtonActivity.class));
         /*for (int i = 0; i < 20; i++) {
             mData.add(new ActivityBean("drag&swipe", DragSwipeActivity.class));
         }*/
