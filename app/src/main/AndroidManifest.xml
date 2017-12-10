@@ -45,7 +45,6 @@
         <receiver android:name=".MyBroadcastReceiver"/>
 
         <activity android:name=".HomeActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -71,7 +70,10 @@
         </activity>
         <activity
             android:name=".BesierActivity"
-            android:configChanges="orientation|screenSize"/>
+            android:configChanges="orientation|screenSize">
+
+
+        </activity>
         <activity
             android:name=".view.BluetoothTestActivity"
             android:launchMode="singleTask"/>
@@ -102,6 +104,8 @@
             -->
         </activity>
         <activity android:name=".FButtonActivity">
+        </activity>
+        <activity android:name=".TranslucentActivity">
 
         </activity>
     </application>

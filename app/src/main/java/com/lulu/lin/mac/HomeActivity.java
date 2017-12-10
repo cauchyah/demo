@@ -95,6 +95,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void onChange(View view){
+        //这是我在缓存区修改的
 //        textinputlayout.setError("密码格式不正确");
         /*Intent intent=new Intent();
         intent.setAction("thisisaction");

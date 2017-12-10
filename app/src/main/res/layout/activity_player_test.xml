@@ -5,16 +5,11 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.lulu.lin.mac.BesierActivity">
-
-    <com.lulu.lin.mac.view.SecondBezier
+              tools:context="com.lulu.lin.mac.PlayerTestActivity">
+    <com.pili.pldroid.player.widget.PLVideoTextureView
+        android:id="@+id/PLVideoTextureView"
         android:layout_width="match_parent"
-        android:layout_height="300dp"/>
-
-    <com.lulu.lin.mac.view.WaveView
-
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
 
 </LinearLayout>
