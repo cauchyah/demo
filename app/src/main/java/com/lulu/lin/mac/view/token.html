@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<h1 id="show">测试</h1>
+<button onclick="getToken()">获取token</button>
+<script type="text/javascript">
+	function getToken() {
+		console.log('getTOken');
+		window.BRIDGE.getAndroidToken();
+
+	}
+	function setAndroidToken(argument) {
+	console.log(argument);
+		// body...
+		document.getElementById('show').innerHTML=argument;
+	}
+
+
+</script>
+</body>
+</html>
