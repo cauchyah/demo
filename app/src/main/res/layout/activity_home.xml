@@ -29,7 +29,7 @@
         android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
-            android:hint="请输入密码"
+            android:hint="请输入密码吧"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
     <android.support.v7.widget.RecyclerView
