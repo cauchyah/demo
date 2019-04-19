@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88bbbbbb"
+    android:clickable="true"
+    android:gravity="center">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/ic_launcher" />
+  <!--  <android.support.v4.view.ViewPager
+        android:id="@+id/content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>-->
+
+
+    <RelativeLayout
+        android:id="@+id/design_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="60dp"
+        app:layout_behavior="com.example.mayn.scrolltest.CustomBottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/bottom_sheet_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="这是一个BottomSheet" />
+
+        <com.example.mayn.scrolltest.CustomViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/bottom_sheet_tv"></com.example.mayn.scrolltest.CustomViewPager>
+
+        <!-- <android.support.v7.widget.RecyclerView
+             android:id="@+id/bottom_sheet_rv"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/bottom_sheet_tv"
+             android:layout_centerInParent="true"
+             android:layout_gravity="center"
+             android:adjustViewBounds="true"
+             android:minHeight="100dp"
+             android:padding="10dp"
+             android:scaleType="centerInside"
+             android:visibility="gone" />-->
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
